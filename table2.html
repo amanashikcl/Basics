@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            height: 50px;
+            width: 100px;
+            background-color: yellow;
+            padding: 5px;
+            border-spacing: 6px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #off{
+            background-color: red;
+        }
+
+        h3{
+           text-align: center;
+           margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="3" colspan="2">Task</th>
+            <th rowspan="2" colspan="7">Day of the week</th>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thurs</td>
+            <td>Fri</td>
+            <td>Sat</td>
+            <td>Sun</td>
+        </tr>
+        <tr>
+            <td colspan="2">College</td>
+            <td>Java</td>
+            <td>Web Designing</td>
+            <td>C Lang</td>
+            <td>Python</td>
+            <td>Practical</td>
+            <td id="off" colspan="2" rowspan="2">OFF</td>
+        </tr>
+        <tr>
+            <td>Work</td>
+            <td colspan="6">Subject preparation and project work</td>
+        </tr>
+    </table>
+    <h3>Daily Schedule</h3>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,th{
+            border: 2px solid;
+
+            
+        }
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            background-color: aliceblue;
+        }
+        td{
+            padding-left: 80px;
+        }
+        td:nth-child(even),th:nth-child(even){
+            background-color: bisque;       
+         }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Phone</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Smith</td>
+            <td>1234512345</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Aman</td>
+            <td>Ashik</td>
+            <td>1234512345</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Ashik</td>
+            <td>Aman</td>
+            <td>1234512345</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Adarsh</td>
+            <td>MK</td>
+            <td>1234512345</td>
+            <td>20</td>
+        </tr>
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Aman</td>
+        </tr>
+        <tr>
+            <td>Ashik</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Email</th>
+            <td>yahoo@gmail.com</td>
+        </tr>
+        <tr>
+            <td>hotmail@outlook.com</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

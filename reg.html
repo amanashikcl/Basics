@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            background-color: rgb(253, 253, 15);
+            width: 500px;
+            height: 30px;
+            color: red;
+            border: 5px solid white;
+        }
+        
+
+        #mid{
+            background-color: rgb(13, 164, 210);
+            width: 500px;
+        }
+
+        table,th,td{
+            text-align: left;
+            padding-left: 15px;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        #bottom{
+            text-align: center;
+            border: 5px solid white;
+        }
+
+        #h{
+            text-align: center;
+            font-size: larger;
+        }
+
+        #a{
+            border: 5px solid white;
+        }
+
+        #b{
+            border-right: 5px solid white;
+        }
+
+        body{
+            border:1px solid black;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <table id="head">
+        <tr>
+            <th id="h">Registration Form</th>
+        </tr>
+    </table>
+    <table id="mid">
+        <tr>
+            <th id="a">Enter Name</th>
+            <td id="a"><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+            <th id="a">Enter Password</th>
+            <td id="a"><input type="password" name="" id=""></td>
+        </tr>
+        <tr>
+            <th id="a">Enter Address</th>
+            <td id="a"><textarea name="" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <th id="a" rowspan="6">Select Game</th>
+        </tr>
+        <tr>
+            <td id="b"><input type="checkbox" name="" id="">Hockey</td>
+        </tr>
+        <tr>
+            <td id="b"><input type="checkbox" name="" id="">Football</td>
+        </tr>
+        <tr>
+            <td id="b"><input type="checkbox" name="" id="">Badminton</td>
+        </tr>
+        <tr>
+            <td id="b"><input type="checkbox" name="" id="">Cricket</td>
+        </tr>
+        <tr>
+            <td id=b><input type="checkbox" name="" id="">Volleyball</td>
+        </tr>
+        <tr>
+            <th id="a">Gender</th>
+            <td id="a"><input type="radio" name="gender" id="">Male <input type="radio" name="gender" id="">Female</td>
+        </tr>
+        <tr>
+            <th id="a">Select age</th>
+            <td id="a" ><select name="" id="">
+                <option value="">Select</option>
+            </select></td>
+        </tr>
+        <tr>
+            <th id="a">
+                Select Photo
+            </th>
+            <td id="a"><input type="file" name="" id=""></td>
+        </tr>
+        <tr>
+            <td id="bottom" colspan="2"><input type="button" value="Click Me">
+            <input type="button" value="Reset">
+            <input type="button" value="Submit Form"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

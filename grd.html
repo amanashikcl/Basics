@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: aliceblue;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 2fr 2fr 2fr;
+            grid-template-areas: 
+            "one one one"
+            "two three four"
+            "two five five"           
+            ;
+            height: 100vh;
+        }
+
+        #d1{
+            grid-area: one;
+            background-color: magenta;
+        }
+
+        #d2{
+            grid-area: two;
+            background-color: rgb(119, 23, 23);
+            border: 2px red solid;
+        }
+
+        #d3{
+            grid-area: three;
+            background-color: yellow;
+            border: 2px red solid;
+        }
+
+        #d4{
+            grid-area: four;
+            background-color: purple;
+            border: 2px red solid;
+        }
+        
+
+        #d5{
+            grid-area: five;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="d1">Lorem ipsum dolor sit amet.</div>
+        <div id="d2">Lorem ipsum dolor sit amet.</div>
+        <div id="d3">Lorem ipsum dolor sit amet.</div>
+        <div id="d4">Lorem ipsum dolor sit amet.</div>
+        <div id="d5">Lorem ipsum dolor sit amet.</div>
+    </div>
+</body>
+</html>

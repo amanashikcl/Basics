@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=fo, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            background-color: orange;
+            width: 80%;
+            height: 30px;
+            padding-left: 10px;
+        }
+        #mid{
+            background-color: rgb(4, 4, 46);
+            color: yellow;
+            width: 80%;
+            padding-left: 5px;
+            height: 90px;
+        }
+        #bottom{
+            background-color: orange;
+            width: 80%;
+            height: 30px;
+            padding-left: 60%;
+        }
+
+        #sub{
+            background-color: greenyellow;
+            border: 2px solid greenyellow;
+
+        }
+
+        #res{
+            background-color: red;
+            margin-left: 3px;
+            border: 2px solid red;
+        }
+
+        th{
+            text-align: right;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table id="header">
+        <tr>
+            <td style="color: yellow;">Sign Up</td>
+        </tr>
+    </table>
+    <table id ="mid">
+        <tr>
+        <th>First Name</th>
+        <td><input type="text" placeholder="Enter First Name"></td>
+        </tr>
+        <tr>
+        <th>Last Name</th>
+        <td><input type="text" placeholder="Enter Last Name"></td>
+        </tr>
+        <tr>
+        <th>Date of Birth</th>
+        <td><select name="" id="">
+            <option value="">Date</option>
+        </select>
+            <select name="" id="">
+                <option value="">Month</option>
+            </select>
+            <select name="" id="">
+                <option value="">Year</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td><input type="radio" name="gender" id="">Male <input type="radio" name="gender">Female</td>
+        </tr>
+        <tr>
+        <th>Country</th>
+        <td> <select name="" id="">
+            <option value="">Country</option>
+            <option value="">India</option>
+            <option value="">United Kingdom</option>
+            <option value="">UAE</option>
+        </select></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="email" placeholder="Enter E-mail" name="" id=""></td>
+        </tr>
+        <tr>
+            <tr>
+            <th>Phone</th>
+            <td><input type="email" placeholder="Enter Phone" name="" id=""></td>
+        </tr>
+            <th>Password</th>
+            <td><input type="password" name="" id=""></td>
+        </tr>
+        <tr>
+            <th>Confirm Password</th>
+            <td><input type="password" name="" id=""></td>
+        </tr>
+        <tr>
+            <td></td>
+           <td><input type="checkbox" name="" id="">I Agree to the Terms of use</td> 
+        </tr>
+    </table>
+    <table id="bottom">
+        <tr>
+            <td></td>
+            <td></td>
+            <td><input  id="sub" type="submit" value="Sumbit"><input id="res" type="reset" value="Cancel"></td>
+            
+        </tr>
+    </table>
+</body>
+</html>
