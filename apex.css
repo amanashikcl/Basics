@@ -1,0 +1,281 @@
+.menu{
+    background: #E2EFFF;
+}
+
+.logo{
+    width: 250px;
+    height: auto;
+    padding-top: 20px;
+    margin-left: 250px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+}
+
+li{
+    display: inline-block;
+    color:#1A1265;
+}
+
+#imgmain{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.main2{
+    display: flex;
+    justify-content: center;
+}
+
+.logo2{
+    position: absolute;
+    top: 960px;
+    left: 200px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+pre{
+    font-size: 17px;
+}
+
+.btn2{
+    padding-left: 370px;
+    
+}
+
+h2{
+    padding-left: 130px ;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.main3{
+    padding-top: 100px;
+}
+
+#grd{
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr ;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.apply{
+    border: none;
+    background-color: #1A1265;
+    color: white;
+    height: 50px;    
+    width: 140px;
+    border-radius: 2px;
+    margin-left: 0px;
+    transition: 0.3s;
+}
+
+ul{
+    padding-top: 20px;
+    width: 1000px;
+}
+
+#footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-family: sans-serif;
+    background-color:#E2EFFF ;
+    color: white;
+    height: 400px;
+}
+
+#w1{
+    
+    padding-left: 100px;
+    padding-top: 100px;
+    color:#1A1265
+}
+
+#w3{
+    text-align: start;
+    padding-right: 100px;
+    padding-top: 100px;
+    color:#1A1265
+}
+
+#w2{
+    padding-top: 100px;
+    color:#1A1265 ;
+}
+
+#btn3{
+    border: none;
+    background-color: #1A1265;
+    color: white;
+    height: 50px;    
+    width: 150px;
+}
+
+.apply:hover{
+    background-color: white;
+    color: #1A1265;
+    border: 2px solid #1A1265;
+}
+
+.btn4{
+    margin-left: 375px;
+}
+
+.btn4:hover{
+    background-color: white;
+    color: #1A1265;
+    border: 1px solid #1A1265;
+}
+
+#th{
+    margin-left: 370px;
+}
+
+#text{
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    color: white;
+    font-weight: bold;
+}
+
+.event{
+    height: 350px;
+    width: 250px;
+}
+
+#evemain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.history:hover{
+    background-color: #1A1265;
+    color: white;
+}
+
+.mission:hover{
+    background-color: #1A1265;
+    color: white;
+}
+
+#camp{
+    padding-top: 80px;
+}
+
+.pop{
+    padding-right: 120px;
+}
+
+#bicon{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+.io{
+    width: 40px;
+    height: 40px;
+    background-color: #1A1265;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.op{
+    margin-left: 235px;
+}
+
+.line{
+    display: flex;
+    height: 2px;
+    text-align: center;
+    width: 80%;
+    border: #1A1265 2px solid;
+    background-color: #E2EFFF;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 145px;
+}
+
+.copyright{
+    color: #1A1265;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2EFFF;
+}
+
+.transform{
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;        
+    transition: transform 2s;
+    position: absolute;
+    top: 557px;
+    left: 160px;
+
+}
+
+.transform:hover{
+    transform: translate(69px);
+}
+
+.red{
+    border: 2px solid #fe506e;
+    position: absolute;
+    top: 233px;
+    width: 60px;
+    left: 90px;
+    border-radius: 3px;
+}
+
+ #arrow{
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-left: 10px solid #fe506e;
+      border-bottom: 5px solid transparent;
+      position: absolute;
+      top: 580px;
+      left: 250px;
+      transition: all 2s ease;
+
+    }
+
+.anim:hover #arrow{
+    width: 10px;
+    height: 10px;
+    background-color: #fe506e;
+    border: none;
+    transform: none;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-radius: 50%;
+}
