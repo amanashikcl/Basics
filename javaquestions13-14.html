@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var op = 3
+        function area(a,r,w,l,b,h){
+            switch(op){
+                case 1:
+                    console.log("Square area: " + (a*a))
+                    break
+                case 2:
+                    console.log("Circle area: " + (3.14*r*r));
+                    break
+                case 3:
+                    console.log("Rectangle area: " + (l*w));
+                    break
+                case 4:
+                    console.log("Triangle area: " + (0.5*b*h));
+                    break
+                default:
+                    console.log("Invalid operator");
+            }
+        }
+        area(4,4,4,4,4,4)
+
+
+// -------------------------------------------------------------------------
+
+
+        var op = 3
+        var b;
+        function atm(b,w,d){
+            switch(op){
+                case 1:
+                    console.log("Balance: " + b);
+                    break
+                case 2:
+                    console.log("Balance after withdrawn: " + (b-w) + "\n" + "Withdrawn: " + w );
+                    break
+                case 3:
+                    console.log("Deposited: " + (d) + "\n" + "Balance after withdrawn: " + (d+b));
+                    break
+                default:
+                    console.log("Invalid operator");
+            }
+        }
+        atm(1000,300,200)
+
+    </script>
+</body>
+</html>

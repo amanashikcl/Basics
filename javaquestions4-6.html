@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumN(n){
+            console.log(n*(n+1)/2);
+        }
+        sumN(10)
+
+// ------------------------------------------
+
+        function larger(a,b,c,d){
+            if(a>b && a>c && a>d){
+                console.log(a + " is larger");
+            } else if(b>c && b>d){
+                console.log(b + " is larger");
+            } else if(c>d){
+                console.log(c + " is larger");
+            } else{
+                console.log(d + " is larger");
+            }
+        }
+        larger(500,400,200,40)
+
+// ----------------------------------------------
+
+        function year(num){
+            if(num%4==0 && num%100!=0 || num%400==0){
+                console.log("Leap Year");
+            } else {
+                console.log("not leap year");
+            }
+        }
+        year(2023)
+    </script>
+</body>
+</html>
