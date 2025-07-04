@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function checkPalindrome(num){
+        let temp = num 
+        let rev = 0
+        while(temp>0){
+            const rem = temp %10 //24
+            rev = rev * 10 + rem
+            temp = parseInt(temp/10)
+        }
+        console.log(rev,num)
+        return num == rev
+    }
+    console.log (checkPalindrome(123))
+
+
+    let str = "malayalam";
+    let reversed = str.split("").reverse().join("");
+    if (str === reversed) {
+        console.log("The string is a palindrome."); //26
+    } else {
+        console.log("The string is not a palindrome.");
+    }
+
+    
+    </script>
+</body>
+</html>

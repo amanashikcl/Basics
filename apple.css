@@ -1,0 +1,100 @@
+.taskbar{
+    padding-left: 300px;
+    height: 35px;
+}
+
+ul{
+    margin-left: 400px;
+    font-size: smaller;
+}
+
+body{
+    background-color: #f5f5f7;
+}
+
+.cardText1{
+   padding-top: 30px;
+   width: 250px;
+   
+}
+
+.card1{
+    box-shadow: 0 0 5px 5px rgb(231, 231, 231);
+    border-radius:20px;
+}
+
+.cardText2{
+    padding-top: 40px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.imgs{
+    margin: 0 auto;
+    position: relative;
+    width: 1100px;
+    height: auto;
+    gap: 60px;
+    padding-left: 10px;
+}
+
+.im1{
+  height: 370px;
+  border-radius: 0px 10px 10px 0px;
+  object-fit: cover;
+}
+
+
+.card3{
+  border: none;
+  background-color: #f9f9f9;
+}
+
+svg{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.c1{
+  width: 583px;
+}
+
+.c2{
+  box-shadow: 0 0 5px 5px rgb(231, 231, 231);
+    border-radius:20px;
+    border: none;
+    height: 300px;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.last{
+  box-shadow: 0 0 5px 5px rgb(231, 231, 231);
+    border-radius:20px;
+    border: none;
+  width: 1600px;
+  background-color: white;
+}
+
+.c3{
+  padding-top: 30px;
+  background-color: #f5f5f7;  
+}
+
+.c4{
+  width: 500px;
+}

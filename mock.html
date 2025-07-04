@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+		<meta charset="utf-8" />
+<meta name="Author" content="Apple Inc." />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="icon" href="/favicon.ico" />
+<link rel="mask-icon" href="/apple-logo.svg" color="#333333">
+
+<link rel="stylesheet" href="/assets/styles/globalnav.css" type="text/css" />
+<link rel="stylesheet" href="/assets/styles/global.dist.css" type="text/css" />
+
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?families=SF+Pro,v3|SF+Pro+Icons,v3">
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?families=SF+Pro+SC,v1">
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=SF+Pro+KR&v=2" type="text/css" />
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?families=SF+Pro+JP,v1">
+
+<link rel="stylesheet" type="text/css" href="/wwdc25/styles/wwdc-global.css?58202507160" />
+
+<link rel="stylesheet" href="/assets/styles/localization.css?02002524063" type="text/css" />
+
+
+<script src="/assets/scripts/settings.js?17182448067"></script>
+<script src="/assets/scripts/DeveloperBreadcrumbs.js?05182434080"></script>
+<script src="/assets/scripts/language-locales.js?17182448067"></script>
+<script async crossorigin src="https://sfss.cdn-apple.com/2.0.0-beta.2/sf-symbol.js"></script>
+		<title>WWDC25 - Apple Developer</title>
+		<meta name="omni_page" content="WWDC25 - (English)" />
+		<meta name="Description" content="Join the worldwide developer community online for a week of technology and creativity." />
+		<meta name="search_icon" content="/assets/elements/icons/search-results/wwdc25-192x192.png" />
+
+		<meta property="og:locale" content="en-US" />
+		<meta property="og:site_name" content="Apple Developer" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="WWDC25" />
+		<meta property="og:url" content="https://developer.apple.com/wwdc25/" />
+		<meta property="og:description" content="Join the worldwide developer community online for a week of technology and creativity." />
+		<meta property="og:image" content="https://developer.apple.com/wwdc25/images/og/phase-3-ght/wwdc25-og.png?3" /> 
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content="https://developer.apple.com/wwdc25/images/og/phase-3-ght/wwdc25-og-twitter.png?3" /> 
+		<meta name="twitter:title" content="WWDC25" />
+		<meta name="twitter:description" content="Join the worldwide developer community online for a week of technology and creativity." />
+		<meta name="twitter:url" content="https://developer.apple.com/wwdc25/" />
+		<meta name="apple-itunes-app" content="app-id=640199958" />
+
+		<link rel="alternate" href="https://developer.apple.com/kr/wwdc25/" hreflang="ko-KR" />
+		<link rel="alternate" href="https://developer.apple.com/jp/wwdc25/" hreflang="ja-JP" />
+		<link rel="alternate" href="https://developer.apple.com/cn/wwdc25/" hreflang="zh-CN" />
+		<link rel="alternate" href="https://developer.apple.com/wwdc25/" hreflang="en" />
+		<link rel="canonical" href="https://developer.apple.com/wwdc25/" />
+		
+		<link rel="stylesheet" href="/wwdc25/styles/overview.css?35142534153" type="text/css" />
+		<link rel="stylesheet" href="/wwdc25/styles/today.css?44192524159" type="text/css" />
+				
+		<script>
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+</script>
+	</head>
+
+<body class="theme-light">
+	
+<link rel="stylesheet" href="/assets/styles/suggest-lang.css?27202513134" type="text/css" />
+<div id="suggest-lang" class="ribbon hide" lang="en">
+	<div class="ribbon-content-wrapper">
+		<div class="ribbon-content row">
+			<div class="column large-12 large-centered">
+				<p><a href="#" id="suggest-link" class="ribbon-link more">View in English</a></p>
+				<button id="suggest-closer" class="icon icon-after icon-reset" aria-label="Dismiss language suggestion" tabindex="0"></button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="/assets/scripts/suggest-lang.js?17182448067"></script>
+	<!-- metrics -->
+<script>
+    /* RSID: */
+    var s_account="awdappledeveloper"
+</script>	
+<script src="/assets/metrics/scripts/analytics.js?072620243"></script>
+<script>
+    s.pageName= AC && AC.Tracking && AC.Tracking.pageName();
+    s.channel="www.en.developer"
+    s.channel="www.wwdc.developer";
+
+    
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)
+</script>
+<!-- /metrics -->
+	<script>
+	// Execute immediately to avoid UI flash
+	(function () {
+		const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+		const body = document.body;
+
+		// If theme-dark or theme-light is already applied, do nothing and lock it
+		if (body.classList.contains("theme-dark") || body.classList.contains("theme-light")) {
+
+			// Set the data-color-scheme attribute based on the existing theme
+			body.setAttribute('data-color-scheme', body.classList.contains("theme-dark") ? "dark" : "light");
+
+			// Prevent future modifications
+			window.__disableColorScheme = true;
+
+			// Hide the color picker immediately
+			const style = document.createElement('style');
+			style.textContent = '.color-scheme-toggle { display: none !important; }';
+			document.head.appendChild(style);
+
+			return;
+		}
+
+		// Otherwise, set theme normally based on user settings or system preference
+		if (window.Settings && window.Settings.preferredColorScheme) {
+			const colorTheme = (window.Settings.preferredColorScheme === 'auto') && !prefersDark ? 'light'
+				: (window.Settings.preferredColorScheme === 'light') ? 'light' : 'dark';
+			body.setAttribute('data-color-scheme', colorTheme);
+			colorTheme === "dark" ? body.classList.add("theme-dark") : body.classList.add("theme-light");
+		} else {
+			const colorTheme = prefersDark ? 'dark' : 'light';
+			body.setAttribute('data-color-scheme', colorTheme);
+			prefersDark ? body.classList.add("theme-dark") : body.classList.add("theme-light");
+		}
+	})();
+</script>
+<link rel="stylesheet" property="stylesheet" href="/assets/styles/localnav.css" type="text/css" />
+<input type="checkbox" id="localnav-menustate" class="localnav-menustate" />
+<nav id="localnav" class="localnav localnav-scrim localnav-noborder" data-sticky role="navigation">
+	<div class="localnav-wrapper">
+		<div class="localnav-background"></div>
+		<div class="localnav-content">
+
+			<h2 class="localnav-title" id="ac-ln-title-logo-container">
+				<a class="ac-ln-title-logo" id="ac-ln-title-logo" href="/wwdc25/" data-analytics-title="product index"><img class="masthead" alt="WWDC25" src="/wwdc25/images/masthead-wwdc.svg" role="img" /></a>
+			</h2>
+			<div class="localnav-menu">
+				<a href="#localnav-menustate" class="localnav-menucta-anchor localnav-menucta-anchor-open" id="localnav-menustate-open">
+					<span class="localnav-menucta-anchor-label">Open Menu</span>
+				</a>
+				<a href="#" class="localnav-menucta-anchor localnav-menucta-anchor-close" id="localnav-menustate-close">
+					<span class="localnav-menucta-anchor-label">Close Menu</span>
+				</a>
+				<div class="localnav-menu-tray">
+					<ul class="localnav-menu-items">
+						<li class="localnav-menu-item">
+							<a href="/wwdc25/" class="localnav-menu-link">Overview</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/wwdc25/sessions-and-labs/" class="localnav-menu-link">Sessions &amp; Labs</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/wwdc25/guides/" class="localnav-menu-link">Guides</a>
+						</li>
+						<li class="localnav-menu-item">
+							<a href="/wwdc25/community/" class="localnav-menu-link">Community</a>
+						</li>
+					</ul>
+				</div>
+				<div class="localnav-actions localnav-actions-center">
+					<div class="localnav-action localnav-action-menucta" aria-hidden="true">
+						<label for="localnav-menustate" class="localnav-menucta">
+							<span class="localnav-menucta-chevron"></span>
+						</label>
+					</div>
+					<div class="localnav-action localnav-action-button">
+						<div class="input-container" id="search-opener" aria-label="Search" role="button" aria-haspopup="true">
+							<a class="search-icon-link" href="/wwdc25/search/">
+								<span class="search-icon-spacer"></span>
+								<span class="icon icon-after icon-search"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<label id="localnav-curtain" for="localnav-menustate"></label>
+<script src="/assets/scripts/ac-localnav.built.js"></script>
+<script type="text/javascript" src="/assets/scripts/localnav.js"></script>
+<script>
+	const localNavTitle = document.getElementById('ac-ln-title-logo')
+	const localNavTitleContainer = document.getElementById('ac-ln-title-logo-container')
+
+	document.getElementById('localnav-menustate').addEventListener('click', (evt) => {
+		localNavTitle.setAttribute("tabIndex", "-1");
+		localNavTitleContainer.setAttribute("tabIndex", "-1");
+		setTimeout(function () {
+			localNavTitle.setAttribute("tabIndex", "0");
+		}, 1000);
+	})
+</script>
+
+	<main id="main" class="main" role="main">
+
+		<section class="section margin-top-small">
+			<div class="section-content">
+				<picture>
+					<!-- <source media="(max-width:734px)" srcset="/wwdc25/images/today/wwdc25-hero-t-today_2x.jpg" /> -->
+					<img src="/wwdc25/images/today/wwdc25-hero-w-today_2x.jpg" width="100%" alt="WWDC25 logo" class="hero-today large-centered center" />
+				</picture>
+				<div class="row">
+					<div class="large-centered column large-6 medium-8 small-12 text-center no-padding">
+
+						<h1 class="typography-quote-reduced">June 9-13, 2025</h1>
+					</div>
+				</div>
+				<div class="row margin-top padding-top-small">
+					<div class="large-centered column large-12 medium-12 small-12 no-padding-top">
+						<div class="grid grid-gutterless">
+							<div class="grid-item large-span-12 medium-span-12 small-span-12">
+								<div class="tile tile-rounded tile-shadow tile-light tile-full">
+									<div class="grid grid-gutterless">
+										<div class="grid-item large-span-5 medium-span-12">
+											<div class="tile-content text-left mv-no-padding-bottom sv-no-padding-bottom">
+												<h3>Today @ WWDC</h3>
+												<p class="margin-bottom-sm">It's the final day of WWDC25. Revisit the week's highlights, and dive into group labs on live streaming, immersive video, and spatial&nbsp;audio.</p>
+												<div class="margin-top-sm mv-no-padding-top sv-no-padding-top">
+													<p><a href="/wwdc25/guides/day5/" class="more">Read about Day 5</a></p>
+													<p class="no-margin-top"><a href="https://music.apple.com/us/playlist/pl.e672f5654e52433aa995643b4b882a01" class="more">Listen to the Jazz playlist</a></p>
+												</div>
+											</div>
+										</div>
+										<div class="grid-item large-span-7 medium-span-12 today-bg day-5"></div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-item large-span-12 medium-span-12 small-span-12">
+								<div class="tile tile-rounded tile-shadow tile-light tile-full">
+									<div class="tile-content">
+										<!-- Start Dynamic Content -->
+										<h3 id="gl-heading">Featured labs</h3>
+										<div class="gl-dynamic margin-top-xs" id="gl-dynamic">
+											<div class="grid grid-gutterless">
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 gl-card">
+													<div>
+														<div class="skeleton skeleton-badge"></div>
+														<div class="skeleton skeleton-icon"></div>
+														<div class="skeleton skeleton-title"></div>
+														<div class="skeleton skeleton-date"></div>
+														<div class="skeleton skeleton-time"></div>
+													</div>
+													<div class="skeleton skeleton-link"></div>
+												</div>
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 gl-card">
+													<div>
+														<div class="skeleton skeleton-badge"></div>
+														<div class="skeleton skeleton-icon"></div>
+														<div class="skeleton skeleton-title"></div>
+														<div class="skeleton skeleton-date"></div>
+														<div class="skeleton skeleton-time"></div>
+													</div>
+													<div class="skeleton skeleton-link"></div>
+												</div>
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 gl-card">
+													<div>
+														<div class="skeleton skeleton-badge"></div>
+														<div class="skeleton skeleton-icon"></div>
+														<div class="skeleton skeleton-title"></div>
+														<div class="skeleton skeleton-date"></div>
+														<div class="skeleton skeleton-time"></div>
+													</div>
+													<div class="skeleton skeleton-link"></div>
+												</div>
+											</div>
+										</div>
+										<!-- End Dynamic Content -->
+										<div class="margin-top">
+											<sf-symbol class="typography-headline-reduced margin-bottom-xs" name="person.line.dotted.person.fill" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+											<h4>One-on-one labs</h4>
+											<p>Set up online appointments with Apple experts for guidance on the topics that interest you&nbsp;most.</p>
+											<p><a href="/wwdc25/sessions-and-labs/#one-on-one-labs" class="more">See upcoming labs and register</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-item large-span-12 medium-span-12 small-span-12">
+								<div class="tile tile-rounded tile-shadow tile-light tile-full">
+									<div class="tile-content">
+										<h3>Featured videos</h3>
+										<div class="margin-top-xs">
+											<div class="grid grid-gutterless margin-top-sm section-video no-margin">
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 text-center">
+													<a href="/videos/play/wwdc2025/101/"> <!-- no YouTube url for CN -->
+														<div class="thumbnail thumbnail-rounded image-wrapper">
+															<img class="thumbnail-image" data-session="wwdc25-101" src="https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/6702DB91-EB35-4327-9E73-46F87C0E87A0/10373_wide_250x141_2x.jpg" alt="" width="100%">
+															<!-- <span class="thumbnail-scrim thumbnail-scrim-bottom"></span> -->
+															<span class="thumbnail-scrim thumbnail-scrim-top"></span>
+															<span class="thumbnail-button" aria-label="play">
+																<svg height="90" viewBox="0 0 90 90" width="90" xmlns="http://www.w3.org/2000/svg">
+																	<path d="m23 64.9032v-39.7277c0-4.0514 2.4984-6.1755 5.5911-6.1755 1.7044 0 2.7755.2753 4.2821 1.18l33.1068 19.0772c2.9341 1.6914 4.52 3.0681 4.52 5.7428s-1.586 4.0514-4.52 5.7428l-33.1068 19.0772c-1.5067.9047-2.5777 1.18-4.2821 1.18-3.0927 0-5.5911-2.0454-5.5911-6.0968z" fill="currentcolor"></path>
+																</svg>
+															</span>
+														</div>
+														<p><b>Keynote</b></p>
+													</a>
+												</div>
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 text-center">
+													<a href="/videos/play/wwdc2025/102/"><!-- no YouTube url for CN -->
+														<div class="thumbnail thumbnail-rounded image-wrapper">
+															<img class="thumbnail-image" data-session="wwdc25-102" src="https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/4AA6F7F1-B617-439E-B47E-500C445BAEB8/10371_wide_250x141_2x.jpg" alt="" width="100%">
+															<!-- <span class="thumbnail-scrim thumbnail-scrim-bottom"></span> -->
+															<span class="thumbnail-scrim thumbnail-scrim-top"></span>
+															<span class="thumbnail-button" aria-label="play">
+																<svg height="90" viewBox="0 0 90 90" width="90" xmlns="http://www.w3.org/2000/svg">
+																	<path d="m23 64.9032v-39.7277c0-4.0514 2.4984-6.1755 5.5911-6.1755 1.7044 0 2.7755.2753 4.2821 1.18l33.1068 19.0772c2.9341 1.6914 4.52 3.0681 4.52 5.7428s-1.586 4.0514-4.52 5.7428l-33.1068 19.0772c-1.5067.9047-2.5777 1.18-4.2821 1.18-3.0927 0-5.5911-2.0454-5.5911-6.0968z" fill="currentcolor"></path>
+																</svg>
+															</span>
+														</div>
+														<p><b>Platforms State of the Union</b></p>
+													</a>
+												</div>
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 text-center">
+													<a href="/videos/play/wwdc2025/367/">
+														<div class="thumbnail thumbnail-rounded image-wrapper">
+															<img class="thumbnail-image" data-session="wwdc25" src="https://devimages-cdn.apple.com/wwdc-services/images/3055294D-836B-4513-B7B0-0BC5666246B0/10103/10103_wide_250x141_2x.jpg" alt="" width="100%">
+															<span class="thumbnail-scrim thumbnail-scrim-top"></span>
+															<span class="thumbnail-button" aria-label="play">
+																<svg height="90" viewBox="0 0 90 90" width="90" xmlns="http://www.w3.org/2000/svg">
+																	<path d="m23 64.9032v-39.7277c0-4.0514 2.4984-6.1755 5.5911-6.1755 1.7044 0 2.7755.2753 4.2821 1.18l33.1068 19.0772c2.9341 1.6914 4.52 3.0681 4.52 5.7428s-1.586 4.0514-4.52 5.7428l-33.1068 19.0772c-1.5067.9047-2.5777 1.18-4.2821 1.18-3.0927 0-5.5911-2.0454-5.5911-6.0968z" fill="currentcolor"></path>
+																</svg>
+															</span>
+														</div>
+														<p><b>WWDC25 Platforms State of the&nbsp;Union&nbsp;Recap</b></p>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="margin-top">
+											<sf-symbol class="typography-headline-reduced margin-bottom-xs" name="play.circle" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+											<h4>Sessions</h4>
+											<p>Dive into more than 100 new videos about design, tools, and&nbsp;technologies.</p>
+											<p><a href="/wwdc25/sessions-and-labs/#session-videos" class="more">Browse all session videos</a></p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-item large-span-12 medium-span-12 small-span-12">
+								<div class="tile tile-rounded tile-shadow tile-light tile-full">
+									<div class="tile-content">
+										<h3>Guides, documentation, and sample&nbsp;code</h3>
+										<div class="margin-top-xs">
+											<div class="grid grid-gutterless">
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 gl-card">
+													<div>
+														<sf-symbol class="typography-manifesto margin-bottom-xs margin-top-xs" name="list.and.film" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+														<h4>Guides</h4>
+														<p> Find out what’s new across Apple platforms and technologies.</p>
+													</div>
+													<p><a href="/wwdc25/guides/" class="more">View guides</a></p>
+												</div>
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 gl-card">
+													<div>
+														<sf-symbol class="typography-manifesto margin-bottom-xs margin-top-xs" name="book.pages" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+														<h4>Documentation</h4>
+														<p> Browse documentation for the new technologies introduced at WWDC25.</p>
+													</div>
+													<p><a href="/documentation/updates/wwdc2025/" class="more">View documentation<span class="loc-en-only"></span></a></p>
+												</div>
+												<div class="grid-item large-span-4 medium-span-6 small-span-12 gl-card">
+													<div>
+														<sf-symbol class="typography-manifesto margin-bottom-xs margin-top-xs" name="curlybraces.square" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+														<h4>Sample code</h4>
+														<p> Explore the samples showcased in this year’s sessions.</p>
+													</div>
+													<p><a href="/documentation/samplecode/" class="more">View sample code<span class="loc-en-only"></span></a></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid-item large-span-6 medium-span-12 small-span-12">
+								<div class="tile tile-rounded tile-shadow tile-light tile-full">
+									<div class="tile-content">
+										<div>
+											<sf-symbol class="typography-headline margin-bottom-xs" name="swift" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+											<h3>Meet the community</h3>
+											<p>Take part in community activities all throughout WWDC. And join the Apple&nbsp;Developer Forums to be part of the conversation&nbsp;online.</p>
+										</div>
+										<p><a href="/wwdc25/community/" class="more">Learn more</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="grid-item large-span-6 medium-span-12 small-span-12">
+								<div class="tile tile-rounded tile-shadow tile-light tile-full">
+									<div class="tile-content">
+										<div>
+											<sf-symbol class="typography-headline margin-bottom-xs" name="trophy" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+											<h3>Apple Design Awards</h3>
+											<p>Apple Design Awards recognize innovation, ingenuity, and technical achievement in app and game design.</p>
+										</div>
+										<p><a href="/design/awards/?cid=wwdc25-ada" class="more">Check out the winners</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="grid-item large-span-12 medium-span-12 small-span-12">
+								<div class="tile tile-rounded tile-shadow tile-light tile-full">
+									<div class="tile-content">
+										<h3>Customize your account</h3>
+										<div class="margin-top-xs">
+											<div class="grid grid-gutterless">
+												<div class="grid-item large-span-6 medium-span-12 small-span-12 gl-card">
+													<div class="margin-top-sm">
+														<sf-symbol class="typography-manifesto margin-bottom-xs" name="person.crop.rectangle" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+														<h4>Developer profile</h4>
+														<p>Complete your <a href="/help/account/basics/profile">Apple Developer profile</a> to get personalized Apple updates, activity announcements, and forums experiences based on your interests and&nbsp;preferences.</p>
+													</div>
+													<p><a href="/account/" class="more">Get started</a></p>
+												</div>
+												<div class="grid-item large-span-6 medium-span-12 small-span-12 gl-card">
+													<div class="margin-top-sm">
+														<sf-symbol class="typography-manifesto margin-bottom-xs" name="envelope" weight="regular" mode="monochrome" loading="eager" aria-hidden="true"></sf-symbol>
+														<h4>Notifications</h4>
+														<p>To receive WWDC25 emails during the conference, check your Apple&nbsp;Developer <a href="/account#EmailsCard">account&nbsp;settings</a>.</p>
+													</div>
+													<p>To get WWDC25 push notifications, visit the Account tab in the <span class="nowrap"><a href="https://apps.apple.com/us/app/apple-developer/id640199958">Apple Developer app</a>.</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<div class="margin-top text-center">
+							<p class="typography-eyebrow-elevated">#WWDC25</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<link rel="stylesheet" href="/assets/styles/footer.dist.css?02002524063">
+<footer id="footer" class="footer" role="contentinfo" aria-labelledby="footer-label">
+    <div class="footer-content">
+        <h2 class="footer-label" id="footer-label">Developer Footer</h2>
+
+	<developer-breadcrumbs>
+		<li>WWDC25</li>
+	</developer-breadcrumbs>
+			<section class="footer-mini" vocab="http://schema.org/" typeof="Organization">
+			<div class="footer-mini-news">
+				<div class="copy">
+					To view the latest developer news, visit <a href="/news/">News</a>.
+				</div>
+				<div class="content">
+					<div class="color-scheme-toggle"
+				role="radiogroup"
+				tabindex="0"
+				aria-label="Select a color scheme preference">
+
+				<label data-color-scheme-option="light">
+
+					<input type="radio" value="light" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Light</div>
+
+				</label>
+
+				<label data-color-scheme-option="dark">
+
+					<input type="radio" value="dark" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Dark</div>
+
+				</label>
+
+				<label data-color-scheme-option="auto">
+
+					<input type="radio" value="auto" autocomplete="off"
+						onchange="window.setPreferredColorScheme(event.target.value)" />
+
+					<div class="text">Auto</div>
+
+				</label>
+
+			</div>
+			<script async src="/assets/scripts/color-scheme-toggle.js"></script>
+				</div>
+			</div>
+			<link rel="stylesheet" href="/assets/styles/language-dropdown.css?02002524063">
+	<div class="language-dropdown dropdown-container legacy-form hidden">
+		<select class="dropdown" aria-label="Language Dropdown"></select>
+		<span class="dropdown-icon icon icon-chevrondown" aria-hidden="true"></span>
+	</div>
+	<script src="/assets/scripts/language-dropdown.js?17182448067"></script>
+			<div class="footer-mini-legal">
+				<div class="footer-mini-legal-copyright">Copyright ©  2025 <a href="https://www.apple.com">Apple Inc.</a> All rights reserved.</div>
+				<div class="footer-mini-legal-links">
+					<a class="footer-mini-legal-link" href="https://www.apple.com/legal/internet-services/terms/site.html" class="first">Terms of Use</a>
+					<a class="footer-mini-legal-link" href="https://www.apple.com/legal/privacy/en-ww/">Privacy Policy</a>
+					<a class="footer-mini-legal-link" href="/support/terms/">License Agreements</a>
+				</div>
+			</div>
+		</section>
+	</div>
+</footer>
+	<script type="module" src="/wwdc25/js/getGroupLabs.js"></script>
+</body>
+</html>
